@@ -20,14 +20,14 @@ Example:
 ```
 from oop import Expense, ExpenseDB
 
-db = ExpenseDB()
-exp1 = Expense("Books", 100.25)
-db.add_expense(exp1)
-exp2 = Expense("Transport", 200.00)
-db.add_expense(exp2)
+expense_db = ExpenseDB()
+expense1 = Expense("Books", 100.25)
+expense_db.add_expense(expense1)
+expense2 = Expense("Transport", 200.00)
+expense_db.add_expense(expense2)
 
 # Retrieve expenses by title
-expenses = db.get_expense_by_title("Transport")
+expenses = expense_db.get_expense_by_title("Transport")
 for exp in expenses:
     print(exp.to_dict())
 
